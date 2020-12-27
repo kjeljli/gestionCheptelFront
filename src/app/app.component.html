@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <!-->button mat-icon-button>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button-->
+      <h5>JMK Invest</h5>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/parametrage'"> Paramétrage </a>
+        <a mat-button [routerLink]="'/g-cheptel'"> Gestion des cheptel </a>
+        <a mat-button [routerLink]="'/g-depenes'"> Gestion des depenses </a>
+        <a mat-button [routerLink]="'/g-fournisseur'"> Gestion des Fournisseurs </a>
+        <a mat-button [routerLink]="'/g-ventes'"> Gestion des ventes </a>
+        <a mat-button [routerLink]="'/g-achats'"> Gestion des achats </a>
+        <a mat-button [routerLink]="'/g-intervention'"> Intervention </a>
+        <a mat-button [routerLink]="'/g-associe'"> Intervention </a>
+  
+      </div>
+    </mat-toolbar-row>
+  
+    <mat-toolbar-row>
+        <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
+      </mat-toolbar-row>
+  </mat-toolbar>
+<router-outlet></router-outlet>
